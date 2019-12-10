@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class FuelCounter {
     public static void main (String[] args) {
         int fuelRequirement = 0;
-        int fuelNeededForFuel = 0;
         ArrayList<Integer> masses = new ArrayList<Integer>();
         File massFile = new File("Day1/input.txt");
 
@@ -18,14 +17,10 @@ public class FuelCounter {
         }
 
         for (int mass : masses) {
-            fuelRequirement += fuelCalc(mass);
-            fuelRequirement += fuelForFuel(fuelCalc(mass));
+            fuelRequirement += fuelCalc(mass);               // this alone for Part 1
+            fuelRequirement += fuelForFuel(fuelCalc(mass));  // add this for Part 2
         }
         System.out.println("Total fuel requirement: " + fuelRequirement);
-
-        // fuelNeededForFuel = fuelForFuel(fuelRequirement);
-        // System.out.println("Fuel needed for fuel:   " + fuelNeededForFuel);
-        // System.out.println("Total final fuel req:   " + (fuelNeededForFuel + fuelRequirement));
     }
 
     public static int fuelForFuel(int fuel) {
