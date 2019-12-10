@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FuelCounter",
+            "request": "launch",
+            "mainClass": "FuelCounter"
+        }
+    ]
+}
