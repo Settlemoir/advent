@@ -8,7 +8,7 @@ public class FuelCounter {
     public static void main (String[] args) {
         int fuelRequirement = 0;
         ArrayList<Integer> masses = new ArrayList<Integer>();
-        File massFile = new File("Day1/input.txt");
+        File massFile = new File("day1/input.txt");
 
         Scanner infile = openFile(massFile);
 

@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - IntcodeRunner",
+            "request": "launch",
+            "mainClass": "IntcodeRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FuelCounter",
             "request": "launch",
             "mainClass": "FuelCounter"
